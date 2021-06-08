@@ -1,0 +1,189 @@
+/* Master styles*/
+
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles*/
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #969292;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.brand {
+    color: rgb(119, 111, 111);
+}
+
+/*Portfolio styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 600px;
+    width: 95%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: transparent;
+}
+
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: white;
+}
+
+
+/* About Me page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: black;
+    font-weight: 500;
+}
+
+.profile-content-wrapper h2 {
+    color: black;
+    font-weight: 500;
+}
+
+.profile-content-wrapper h3 {
+    color: black;
+    font-weight: 500;
+}
+
+/* Comment box */
+
+.comment-box {
+   
+    top: 50%;
+    left: 2%;
+    position: absolute;
+    transform: translate(0%, -10%);
+    width: 500px;
+}
+
+.comment-box h3 {
+    
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.comment-box input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b086;
+}
+
+.comment-box input:focus {
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b086;
+}
+
+.comment-box textarea:focus {
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.commnet-box button {
+    border: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
